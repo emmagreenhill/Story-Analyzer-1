@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title> </title>
+ 
+<style> body{
+    margin-top:20px;
+    background:#FAFAFA;    
+}
+
+    .jumbotron jumbotron-fluid {
+        border-bottom:200px;
+        
+    }
+
+.people-nearby .google-maps{
+  background: #f8f8f8;
+  border-radius: 4px;
+  border: 1px solid #f1f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.people-nearby .google-maps .map{
+  height: 300px;
+  width: 100%;
+  border: none;
+}
+
+.people-nearby .nearby-user{
+  padding: 20px 0;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  margin-bottom: 20px;
+}
+
+img.profile-photo-lg{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+</style>
+}
+    
+    
+</head>
+   
+    
+    <body> 
+       
+       
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+      <img src="logo.png" alt="logo" width="200" height="300">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboards.html">Dashboard</a>
+        </li>
+    
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Organization
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="university.html">University</a></li>
+            <li><a class="dropdown-item" href="occupation.html">Occupation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        
+     <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://storyanalyzer.org/Story%20Visualization%20article.pdf">About Story Analyzer</a></li>
+            <li><a class="dropdown-item" href="https://stanfordnlp.github.io/CoreNLP/">About Stanford's CORENLP</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://github.com/d3">About D3 Data Visualization</a></li>
+          </ul>
+        </li>      
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>  
+</header> 
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Find your University</h1>
+    <p class="lead">Personalize your experience</p>
+  </div>
+</div>
+       
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="people-nearby">
+              
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="jmu.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">James Madison Univeristy </a></h5>
+                    <p>Harrisonbrug, VA</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="richmond.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">University of Richmond </a></h5>
+                    <p>Richmond, VA</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="syracuse.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Syracuse Univerity </a></h5>
+                    <p>Syracuse, NY</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right"> Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="villanova.jpg" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Villanova University</a></h5>
+                    <p>Villanova, PA</p>
+                    <p class="text-muted"> "X" members <p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="vt.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Virgina Polytechnic Institute and State University</a></h5>
+                    <p>Blacksburg, VA</p>
+                    <p class="text-muted">"X" members  </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="unc.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">University of North Carolina at Chapel Hill</a></h5>
+                    <p>Chapel Hill, North Carolina</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="indiana.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Indiana University Bloomington</a></h5>
+                    <p> Bloomington, Indiana</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="princeton.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Princeton University</a></h5>
+                    <p>Princeton, NJ</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="yale.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">Yale University</a></h5>
+                    <p>New Haven, CT</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                    <img src="florida.png" alt="user" class="profile-photo-lg">
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">University of Florida</a></h5>
+                    <p>Gainesville, FL</p>
+                    <p class="text-muted">"X" members </p>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <button class="btn btn-primary pull-right">Join</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    	</div>
+	</div>
+</div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   
+  </body>
+    
+</html>
